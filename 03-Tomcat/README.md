@@ -46,6 +46,7 @@ netstat -tulnp | grep -i 8080
 2. Go to Petclinic-Free-Style-Job -> Configure -> PostBuildAction -> Deploy war/ear to a Container.
 
 ```
+```
    WAR File Path : 02-Jenkins/petclinic-code/target/*.war
    Context Path  : petclinic
    Containers : Tomcat 8.x Remote
@@ -53,7 +54,7 @@ netstat -tulnp | grep -i 8080
 ```
    Note : After Perfrom Step 3 ( Adding credentions for deployer, please select the same here ) 
 ```
-
+```
 3. Add the credentails:
    Click Add 
      Username : deployer

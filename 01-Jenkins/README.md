@@ -8,7 +8,7 @@ sudo su -
 
 ### Download Jenkins & Install Java JDK
 ```
-  mkdir 02-Jenkins
+  apt-get update 
   apt-get install default-jdk -y
   java -version
   wget https://get.jenkins.io/war-stable/2.249.2/jenkins.war
@@ -18,7 +18,7 @@ sudo su -
 
 ### Setup Jenkins to run on custom port : 9090
 ```
-nohup  java -jar /root/jenkins.war --httpPort=9090 > output.txt & 
+nohup  java -jar /root/jenkins.war --httpPort=9090 > /root/output.txt & 
 ```
 
 ### Now you can access the Jenkins via Web Brower, Please go ahead & Complete the Setup process 

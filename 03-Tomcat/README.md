@@ -40,7 +40,7 @@ netstat -tulnp | grep -i 8080
 
 
 # Now Setup an Tomcat intergation  with Jenkins 
-
+```
 1. Install "Deploy to Container Plugin" 
 2. Go to Petclinic-Free-Style-Job -> Configure -> PostBuildAction -> Deploy war/ear to a Container.
    WAR File Path : 02-Jenkins/petclinic-code/target/*.war
@@ -56,9 +56,10 @@ netstat -tulnp | grep -i 8080
      ID       : 03
      Description: Tomcat 8 - Deployer
    -> Submit 
-
+```
+```
 -> Save Job -> Trigger Build Now. 
-
+```
 
 
 

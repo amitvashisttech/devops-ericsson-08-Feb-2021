@@ -1,4 +1,4 @@
-node('linux-node') {
+node{
 
 stage('Git Checkout') {
   git branch: 'main', credentialsId: '01', url: 'https://github.com/amitvashisttech/devops-ericsson-08-Feb-2021.git'

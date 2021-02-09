@@ -1,5 +1,7 @@
 node{
 
+notify('Started')
+
 stage('Git Checkout') {
   git branch: 'main', credentialsId: '01', url: 'https://github.com/amitvashisttech/devops-ericsson-08-Feb-2021.git'
 }
@@ -32,6 +34,21 @@ stage('Publish Test Results'){
  publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'target/site/jacoco/', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: 'Petclinic Project Test Results'])   
  }
  }
-}   
+ notify('Completed')
+}
+
+def notify(status){
+  emailext(
+    to: "amitvashist7@outlook.com",
+    subject: "${status}: JOB '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
+    body: """<p> ${status}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>
+             <p> Check Console output at <a href='${env.BUILD_URL}'>${env.JOB_NAME}[${env.BUILD_NUMBER}]</a></p>""",
+  )
+}
     
+
+
+
+
+
 

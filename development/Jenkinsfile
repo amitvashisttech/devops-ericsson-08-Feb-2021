@@ -1,0 +1,37 @@
+node('linux-node') {
+
+stage('Git Checkout') {
+  git branch: 'main', credentialsId: '01', url: 'https://github.com/amitvashisttech/devops-ericsson-08-Feb-2021.git'
+}
+
+def project_path = "02-App-Code/petclinic-code"
+
+dir(project_path) {
+
+stage('Maven Clean') {
+sh 'mvn clean'
+}
+
+stage('Maven Compile') {
+sh 'mvn compile'
+}
+
+stage('Maven Test') {
+sh 'mvn test'
+}
+
+stage('Maven Package') {
+sh 'mvn package'
+}
+
+stage('Archive Artifacts'){
+  archiveArtifacts artifacts: 'target/*.war', followSymlinks: false
+   }
+
+stage('Publish Test Results'){
+ publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'target/site/jacoco/', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: 'Petclinic Project Test Results'])   
+ }
+ }
+}   
+    
+

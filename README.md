@@ -1,1 +1,0 @@
-# devops-ericsson-08-Feb-2021

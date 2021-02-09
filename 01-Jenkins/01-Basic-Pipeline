@@ -1,0 +1,8 @@
+node('linux-node') {
+git branch: 'main', credentialsId: '01', url: 'https://github.com/amitvashisttech/devops-ericsson-08-Feb-2021.git'
+
+sh 'mvn clean  -f 02-App-Code/petclinic-code/pom.xml'
+sh 'mvn compile  -f 02-App-Code/petclinic-code/pom.xml'
+sh 'mvn test  -f 02-App-Code/petclinic-code/pom.xml'
+sh 'mvn package  -f 02-App-Code/petclinic-code/pom.xml'
+}

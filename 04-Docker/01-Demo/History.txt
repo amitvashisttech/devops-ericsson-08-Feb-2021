@@ -1,0 +1,31 @@
+    1  echo  "################### Docker Demo ###########################"
+    2  docker version 
+    3  systemctl status docker
+    4  docker --help
+    5  docker run busybox echo "Welcome to Docker Demo"
+    6  docker images 
+    7  docker run busybox echo "Welcome to Docker Demo"
+    8  docker run busybox echo "Welcome to Docker"
+    9  docker images 
+   10  docker container ls 
+   11  docker container ls -a 
+   12  docker run busybox echo "Hello World"
+   13  docker container ls -a 
+   14  docker ps 
+   15  docker ps -a 
+   16  docker images 
+   17  docker run ubuntu echo "Hey Ubuntu"
+   18  docker images 
+   19  docker run ubuntu:16.04 echo "Hey Ubuntu 16"
+   20  docker images 
+   21  docker pull ubuntu:trusty
+   22  docker images 
+   23  docker ps 
+   24  docker ps -a 
+   25  ls
+   26  cd devops-ericsson-08-Feb-2021/
+   27  ls
+   28  cd 04-Docker/
+   29  ls
+   30  mkdir 01-Demo
+   31  history > 01-Demo/History.txt

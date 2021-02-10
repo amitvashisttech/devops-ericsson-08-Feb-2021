@@ -125,3 +125,37 @@
   125  rm -rf 02-Hub
   126  ls
   127  history > 01-Demo/History.txt 
+  128  cd ../
+  129  git add . ; git commit -m "Docker Demo 1"; git push 
+  130  l
+  131  docker images 
+  132  docker tag 5d592881faed your_username/image_name:v1 
+  133  docker images 
+  134  docker run -it ubuntu:16.04
+  135  docker ps 
+  136  docker kill $(docker ps -aq) 
+  137  docker rm $(docker ps -aq) 
+  138  docker run -it --name test1 ubuntu:16.04
+  139  docker ps 
+  140  docker run -it --name test1 ubuntu:16.04
+  141  docker run -it --name test2 ubuntu:16.04
+  142  docker ps 
+  143  docker run -itd --name test3 ubuntu:16.04
+  144  docker run -itd --name test4 ubuntu:16.04
+  145  docker ps 
+  146  docker attach 9e0aa8ffd548
+  147  ls
+  148  docker ps 
+  149  docker inspect 9e0aa8ffd548 
+  150  docker inspect test4
+  151  docker inspect test3
+  152  docker inspect test2
+  153  docker inspect --format '{{.Name}} {{.State.Running}} {{.NetworkSettings.IPAddress}}' test1
+  154  docker inspect --format '{{.Name}} {{.State.Running}} {{.NetworkSettings.IPAddress}}' test2
+  155  docker inspect --format '{{.Name}} {{.State.Running}} {{.NetworkSettings.IPAddress}}' test3
+  156  docker inspect --format '{{.Name}} {{.State.Running}} {{.NetworkSettings.IPAddress}}' test4
+  157  docker inspect --format '{{.Name}} {{.State.Running}} {{.NetworkSettings.IPAddress}}' test5
+  158  docker kill test3
+  159  docker inspect --format '{{.Name}} {{.State.Running}} {{.NetworkSettings.IPAddress}}' test3
+  160  ls
+  161  history > 04-Docker/01-Demo/History.txt 

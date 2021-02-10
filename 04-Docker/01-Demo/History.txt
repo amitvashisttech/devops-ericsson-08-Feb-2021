@@ -75,3 +75,53 @@
    75  cd ..
    76  ls
    77  history > 01-Demo/History.txt 
+   78  ls
+   79  cd ..
+   80  ls
+   81  git add . ; git commit -m "Docker Demo 1"; git push 
+   82  ls
+   83  docker run ubuntu echo "Hello World"
+   84  docker ps 
+   85  docker ps -a
+   86  docker start 367a02f31c59
+   87  docker ps -a\
+   88  docker ps -
+   89  docker ps 
+   90  docker ps -a
+   91  docker start 367a02f31c59
+   92  docker ps -a
+   93  docker run -it ubuntu
+   94  docker ps -a
+   95  docker start b9936928f726
+   96  docker ps 
+   97  docker attach b9936928f726
+   98  docker ps 
+   99  docker attach b9936928f726
+  100  docker ps 
+  101  docker ps -a
+  102* docker start b9
+  103  docker exec -it b9936928f726 cat Hello.txt
+  104  docker exec -it b9936928f726 ps -ef 
+  105  ls
+  106  docker images
+  107  docker pull amitvashist7/k8s-tiny-web
+  108  docker images
+  109  docker pull amitvashist7/k8s-tiny-web:v4
+  110  docker pull amitvashist7/k8s-tiny-web:4
+  111  docker pull amitvashist7/k8s-tiny-web:3
+  112  docker pull amitvashist7/k8s-tiny-web:2
+  113  docker images 
+  114  docker pull amitvashist7/apache-ex4
+  115  docker login 
+  116  docker pull amitvashist7/apache-ex4
+  117  docker push amitvashist7/apache-ex4
+  118  ls
+  119  cd 04-Docker/
+  120  ls
+  121  mkdir 02-Hub
+  122  ls
+  123  rm 02-Hub/
+  124  ls
+  125  rm -rf 02-Hub
+  126  ls
+  127  history > 01-Demo/History.txt 

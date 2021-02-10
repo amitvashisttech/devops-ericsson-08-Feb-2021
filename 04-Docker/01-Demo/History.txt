@@ -29,3 +29,49 @@
    29  ls
    30  mkdir 01-Demo
    31  history > 01-Demo/History.txt
+   32  cd ../
+   33  ls
+   34  git add . ; git commit -m "Docker Demo 1"; git push 
+   35  curl www.google.com
+   36  ls
+   37  cd 04-Docker/
+   38  ls
+   39  cd 00-Setup/
+   40  ls
+   41  vim install-docker.sh 
+   42  ls
+   43  docker images 
+   44  docker run -it ubuntu:trusty 
+   45  docker run -it ubuntu:16.04
+   46  docker ps 
+   47  docker ps -a
+   48  docker ps 
+   49  docker run -it ubuntu
+   50  docker ps 
+   51  docker ps -a
+   52  docker [s 
+   53  docker ps
+   54  docker ps -a 
+   55  docker start aee4c9572573
+   56  docker ps 
+   57  docker ps -a 
+   58  docker stop aee4c9572573
+   59  docker ps 
+   60  docker ps -a 
+   61  docker rm aee4c9572573
+   62  docker ps -a
+   63  docker ps 
+   64  docker kill ee5b0990650a
+   65  docker ps 
+   66  docker ps -a
+   67  docker stop 4f1c6fbe57cf
+   68  docker ps -a
+   69  docker ps -a 
+   70  docker ps -aq 
+   71  docker rm  $(docker ps -aq)
+   72  docker ps 
+   73  docker ps -a
+   74  ls
+   75  cd ..
+   76  ls
+   77  history > 01-Demo/History.txt 

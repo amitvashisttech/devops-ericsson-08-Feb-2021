@@ -8,7 +8,7 @@
 ## First clone this repository on your windows machine.
 
 ```
-git clone https://github.com/amitvashisttech/devops-stackstrom-dxc-2021-Jan-04.git
+git clone https://github.com/amitvashisttech/devops-ericsson-08-Feb-2021.git
 ``` 
 
 ## Now provision three virtual machines with following commands:

@@ -14,7 +14,7 @@ git clone https://github.com/amitvashisttech/devops-ericsson-08-Feb-2021.git
 ## Now provision three virtual machines with following commands:
 
 ```
-cd devops-stackstrom-dxc-2021-Jan-04/02-K8s/
+cd devops-ericsson-08-Feb-2021/00-Setup/Devops
 vagrant.exe up
 
 
@@ -36,8 +36,8 @@ Note :
 ```
 vagrant.exe ssh master
 sudo su - 
-git clone To https://github.com/amitvashisttech/devops-stackstrom-dxc-2021-Jan-04.git
-cd devops-stackstrom-dxc-2021-Jan-04/07-Kubernetes/00-Setup
+git clone To https://github.com/amitvashisttech/devops-ericsson-08-Feb-2021.git
+cd devops-ericsson-08-Feb-2021/05-Kubernetes/00-Setup
 sh install-k8s-master-node.sh
 
 ---
@@ -76,8 +76,8 @@ k8s-master   Ready    master   5m6s   v1.18.0
 ```
 vagrant.exe ssh woker1
 sudo su - 
-git clone To https://github.com/amitvashisttech/devops-stackstrom-dxc-2021-Jan-04.git
-cd devops-stackstrom-dxc-2021-Jan-04/07-Kubernetes/00-Setup
+git clone To https://github.com/amitvashisttech/devops-ericsson-08-Feb-2021.git
+cd devops-ericsson-08-Feb-2021/05-Kubernetes/00-Setup
 sh install-k8s-worker-node.sh
 ```
 
@@ -102,4 +102,5 @@ k8s-worker-02   Ready    <none>   4m47s   v1.18.0   10.128.0.9    <none>        
 root@k8s-master:~# 
 
 ```
+
 

@@ -10,4 +10,6 @@ kubectl get pods
 kubectl run hello-k8s --image=nginx --port=80
 kubectl get pods 
 kubectl get pods -o wide 
+kubectl describe pod hello-k8s
 ```
+

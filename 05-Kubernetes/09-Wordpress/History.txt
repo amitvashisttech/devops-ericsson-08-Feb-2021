@@ -1,0 +1,22 @@
+  186  cd 09-Wordpress/
+  187  ls
+  188  cd ..
+  189  ls
+  190  kubectl create -f 09-Wordpress/
+  191  kubectl get pods 
+  192  ls
+  193  cd 09-Wordpress/
+  194  s
+  195  ls
+  196  cat wordpress-secrets.yml 
+  197  cat wordpress-service.yml 
+  198  ls
+  199  vim wordpress-deployment.yml 
+  200  kubectl get pods 
+  201  kubectl describe pod wordpress-deployment-7c8b8bf4d4-6hgfn
+  202  kubectl get pods -o wide 
+  203  kubectl get svc 
+  204  cat wordpress-secrets.yml 
+  205  kubectl exec -it wordpress-deployment-7c8b8bf4d4-6hgfn -c mysql -- mysql -u root -p 
+  206  ls
+  207  history > History.txt 
